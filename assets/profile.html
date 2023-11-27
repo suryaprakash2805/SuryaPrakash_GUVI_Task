@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile.css">
+    
+    <script src="profile.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://kit.fontawesome.com/f001fbb14e.js" crossorigin="anonymous"></script>
+    <title>Profile Page</title>
+</head>
+<body>
+    <div class="container">
+        <form action="profile.php" method="post" id="profileForm">
+            <div class="form-box" id="form">
+                <h1>My Profile</h1>
+                <div class="input-group">
+                    <div class="input-field" id="namefield"> 
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Name" name="name" required>
+                    </div>
+
+                    <div class="input-field"> 
+                        <i class="fa-solid fa-calendar"></i>
+                        <input type="date" name="dob" required>
+                    </div>
+
+                    <div class="input-field" id="namefield"> 
+                        <i class="fa-solid fa-phone"></i>
+                        <input type="tel" placeholder="Contact Number" name="number" required>
+                    </div>
+
+                    <div class="input-field" id="namefield"> 
+                        <i class="fa-solid fa-child"></i>
+                        <input type="number" placeholder="Age" name="age" required>
+                    </div>
+
+                    <div class="input-field" id="namefield"> 
+                        <i class="fa-solid fas fa-home"></i>
+                        <input type="text" placeholder="Location" name="location" required>
+                    </div>
+                </div>
+                <button type="submit" id="saveButton" name="submit">Save</button>
+                <div id="alertBox" style="display:none;"></div>
+            </div>
+           
+        </form>
+    </div>
+   
+</body>
+</html>

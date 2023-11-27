@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "login.css" >
+    <script src="https://kit.fontawesome.com/f001fbb14e.js" crossorigin="anonymous"></script>
+    <script src="register.js" defer></script>
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="container">
+        <form action="login.php" method="post">
+        <div class="form-box" id="form">
+            <h1 id="title">Login</h1>
+            <form>
+                <div class="input-group">
+                    <div class="input-field" id="namefield"> 
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text " placeholder="Username" id="username" name="username" required>
+                        <div class="error"></div> 
+                    </div>
+                    <div class="input-field"> 
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Password" id="password" name="password" required>
+                        <div class="error"></div> 
+                    </div>
+                </div>
+                <div class="btn-field">
+                <button type="submit" id="loginBtn" class="disable">Login</button> 
+                 </div>
+                <p class="Login">Don't have an account? <a href="register.html"> Register</a></p>
+            </form>
+        </div>
+    </form>
+     </div>       
+
+</body>
+</html>
